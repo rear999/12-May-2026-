@@ -10,7 +10,7 @@ import (
 func addNum(count, rangeMax int, nums *[]int) {
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < count; i++ {
-		randomNum := rand.Intn(rangeMax) + 1 // числа от 1 до rangeMax
+		randomNum := rand.Intn(rangeMax) + 1 
 		*nums = append(*nums, randomNum)
 	}
 }
@@ -46,7 +46,8 @@ func main() {
 	//TODO: Результат
 	fmt.Printf("\nЧисло %d встречается %d раз(а)\n", targetNumber, duplicatesCount)
 	
-	//Покажем все индексы где встречается число 15
+	//
+	все индексы где 15
 	fmt.Printf("Индексы числа %d: ", targetNumber)
 	for i, num := range nums {
 		if num == targetNumber {
